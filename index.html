@@ -1,130 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATIVIDADE DE HTML</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Top 10</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
-
   <body>
-    <h1><b>Top 10 Sites</b></h1>
-    <ul>
-      <li><a href="https://www.google.com">Google</a></li>
-      <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
-      <li><a href="https://www.youtube.com">Youtube</a></li>
-      <li><a href="https://www.facebook.com">Facebook</a></li>
-      <li><a href="https://www.amazon.com">Amazon</a></li>
-      <li><a href="https://www.twitter.com">Twitter</a></li>
-      <li><a href="https://www.instagram.com">Instagram</a></li>
-      <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-      <li><a href="https://www.reddit.com">Reddit</a></li>
-      <li><a href="https://www.netflix.com">Netflix</a></li>
-    </ul>
-    <ol>
-      <li>
-        Lucas Santana
-        <ul>
-          <li>Matemática</li>
-          <li>Química</li>
-          <li>Física</li>
-        </ul>
-      </li>
-      <li>
-        Gabriel Torres
-        <ul>
-          <li>Filosofia</li>
-          <li>Sociologia</li>
-          <li>Geografia</li>
-        </ul>
-      </li>
-      <li>
-        Fernando Pessoa
-        <ul>
-          <li>Aquicultura</li>
-        </ul>
-      </li>
-    </ol>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TOP10</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categorias</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Filmes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/HTML FILIpe/pages/Action.html">Action</a></li>
+                <li><a class="dropdown-item" href="/HTML FILIpe/pages/Comedy.html">Comedy</a></li>
+                <li><a class="dropdown-item" href="/HTML FILIpe/pages/Drama.html">Drama</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
 
-    <hr />
+    </nav>
 
-    <h1><b>Queima de estoque</b></h1>
-    <h2><b>Do ifome</b></h2>
-    <hr />
+    <!-- Corousel   -->
 
-    <h1><b>Lula no palito</b></h1>
-    <h2>
-      <b><i>100 palitos de Lula, ao molho de marisco</i></b>
-    </h2>
-    <img
-      src="https://img.freepik.com/fotos-premium/lula-assada-no-palito_10589-308.jpg?w=1380"
-      alt="Image"
-      height="400"
-      width="550"
-    />
-    <p>DE <s>R$ 119,99</s></p>
-    <p><b>POR R$ 99,99</b></p>
-    <hr />
 
-    <h1><b>Apex burger</b></h1>
-    <h2>
-      <i
-        >hamburgueres de 250g, molho barbecue, molho de bacon, molho de pimenta,
-        pão e bacon, maionese temperada com bacon</i
-      >
-    </h2>
-    <img
-      src="https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/304938956_491735419624204_159022766263356994_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_ohc=4jfTaqBsEk8AX8kLL5p&_nc_ht=scontent.fcpq5-1.fna&oh=00_AfCk9VX50w4vBW3v0VRM6gevnIf3n6po65P5jYHZATmXyA&oe=639D4A39"
-      alt="Image"
-      height="400"
-      width="550"
-    />
-    <p>DE <s>R$ 79,99</s></p>
-    <p><b>POR R$ 59,99</b></p>
-    <hr />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://hbomax-images.warnermediacdn.com/images/GX-IlUgib1sIdmgEAAABv/tileburnedin?size=1280x720&partner=hbomaxcom&v=43fe3e03a7841cb0b5a5f04a33beb9f5&host=art-gallery.api.hbo.com&language=pt-br&w=1280" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mad Max</h5>
+            <p>Otimo filme de ação</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.primebcenters.com/wp-content/uploads/2019/03/banner-a-procura-da-felicidade.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>A procura da felicidade</h5>
+            <p>Filme emocionante</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://epipoca.com.br/wp-content/uploads/2021/04/American-Pie-Divulgacao-1200x900.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>American Pie</h5>
+            <p>Filme com Muita Comedia</p>
+          </div>
+        </div>
+        
+        
+        
 
-    <h2>Grupo A</h2>
-
-    <table border="2">
-      <tr>
-        <th>Equipe</th>
-        <th>Pts</th>
-        <th>PJ</th>
-        <th>VIT</th>
-      </tr>
-      <tr>
-        <td>1 Holanda</td>
-        <td>7</td>
-        <td>3</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>Senegal</td>
-        <td>6</td>
-        <td>3</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>Equador</td>
-        <td>4</td>
-        <td>3</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>Catar</td>
-        <td>0</td>
-        <td>3</td>
-        <td>0</td>
-      </tr>
-    </table>
-    <div class="05">
-        <p>acesse</p>
-        <a href="./paginas/sobrenos.html" rel="next" target="_self"> pag 3</a>
-        <p>acesse</p>
-        <a href="./paginas/produtos.html" rel="next" target="_self"> pag 3</a>
-        <p>acesse</p>
-        <a href="./paginas/login.html" rel="next" target="_self"> pag 3</a>
-
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+    <p class="placeholder-wave">
+      <span class="placeholder col-12"></span>
+    </p>
+          <!-- lista -->
+
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Mad Max</div>
+                Filme Para Curtir
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 10</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">A Procura da Felicidade</div>
+                Filme Para Chorar
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 10</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Xuxa e os trapalhões</div>
+                Melhor Filme de Comedia
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 1</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">A espera de um milagre</div>
+                Filme Para Chorar Acompanhado
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 10</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">O dia depois de amanhã</div>
+                Filme Para Ficar Tenso
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Independence Day</div>
+                Filme Para Levar Susto
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 7</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">O Gladiador</div>
+                Filme Para Inspirar
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 9</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">American Pie</div>
+                Filme Para Chorar de Rir
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 7</span>
+            </li>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Tropa de Elite</div>
+                Filme Para Ficar Tenso
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 7</span>
+            </li>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Rio</div>
+                Filme Para Divertir
+              </div>
+              <span class="badge bg-primary rounded-pill">Note 7</span>
+            </li>
+            </li>
+          </ol>
+
+          <div class="card text-bg-dark">
+            <div class="card-body">
+              <h5 class="card-title">Entre em contato</h5>
+              <p class="card-text">Gostou do Site, me adicione no linkedin!</p>
+              <a href="https://www.linkedin.com/in/flaviotobias/" class="btn btn-primary">Linkedin</a>
+            </div>
+          </div>
+          
   </body>
 </html>
